@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TrainingCenter.Api.Services.Leads.LeadRoutingOptions">
+    <Position X="3" Y="2.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAAAAAAACAABAAAAAAEAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Services\Leads\LeadRoutingOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrainingCenter.Api.Services.Leads.LeadService">
+    <Position X="11.75" Y="2.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAggAAAAAAAAACAAAAAAAAAIAACAAAAAAAAAgAAAAE=</HashCode>
+      <FileName>Services\Leads\LeadService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_backupMail" />
+      <Field Name="_primaryMail" />
+      <Field Name="_routing" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrainingCenter.Api.Infrastructure.Mail.BackupMailService">
+    <Position X="8.25" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Infrastructure\Mail\BackupMailService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrainingCenter.Api.Infrastructure.Mail.CorporateMailOptions">
+    <Position X="15.5" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mail\CorporateMailOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrainingCenter.Api.Infrastructure.Mail.CorporateMailService">
+    <Position X="8.25" Y="7.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Infrastructure\Mail\CorporateMailService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrainingCenter.Api.Contracts.LeadRequest">
+    <Position X="19.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Contracts\LeadRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TrainingCenter.Api.Services.Leads.ILeadService">
+    <Position X="11.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Leads\ILeadService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrainingCenter.Api.Infrastructure.Mail.IBackupMailService">
+    <Position X="8.25" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mail\IBackupMailService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrainingCenter.Api.Infrastructure.Mail.IMailService">
+    <Position X="8.25" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mail\IMailService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TrainingCenter.Api.Infrastructure.Mail.MailChannel">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Infrastructure\Mail\InMemoryMailbox.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

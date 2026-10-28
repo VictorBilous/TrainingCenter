@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TrainingCenter.Api.Services.Pricing.PriceCalculator">
+    <Position X="7" Y="6.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABAgAAAAA=</HashCode>
+      <FileName>Services\Pricing\PriceCalculator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrainingCenter.Api.Services.Pricing.GraduateDiscountRule">
+    <Position X="1.25" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Services\Pricing\GraduateDiscountRule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrainingCenter.Api.Services.Pricing.HotGroupDiscountRule">
+    <Position X="3.75" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Services\Pricing\HotGroupDiscountRule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TrainingCenter.Api.DependencyInjection">
+    <Position X="1.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>DependencyInjection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrainingCenter.Api.Services.Pricing.CartService">
+    <Position X="5" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAIAAAAAAAEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Pricing\CartService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="TrainingCenter.Api.Services.Pricing.IPriceCalculator">
+    <Position X="7" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Pricing\IPriceCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrainingCenter.Api.Services.Pricing.IDiscountRule">
+    <Position X="2.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Pricing\IDiscountRule.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TrainingCenter.Api.Services.Pricing.ICartService">
+    <Position X="5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Pricing\ICartService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,52 @@
+@host = http://localhost:5080
+
+### Каталог курсов (даты старта считаются от сегодняшнего дня)
+GET {{host}}/api/courses
+
+### Корзина обычного пользователя: скидка 20% только на горящие группы (курсы 1 и 3)
+POST {{host}}/api/cart/price
+Content-Type: application/json
+
+{ "userId": 1, "courseIds": [1, 2, 3, 4] }
+
+### Корзина выпускника: 30% на всё, скидки не суммируются (не 50% на горящие)
+POST {{host}}/api/cart/price
+Content-Type: application/json
+
+{ "userId": 2, "courseIds": [1, 2, 3, 4] }
+
+### Заявка от юр. лица — основной сервис «лежит», уйдёт на specialist.corp@yandex.ru
+POST {{host}}/api/leads
+Content-Type: application/json
+
+{
+  "name": "ООО Ромашка",
+  "phone": "+7 (495) 123-45-67",
+  "email": "info@romashka.ru",
+  "clientType": "LegalEntity"
+}
+
+### Заявка от физ. лица — уйдёт на specialist.ufl@yandex.ru
+POST {{host}}/api/leads
+Content-Type: application/json
+
+{
+  "name": "Иван Петров",
+  "phone": "+7 999 123-45-67",
+  "email": "ivan.petrov@example.com",
+  "clientType": "Individual"
+}
+
+### Невалидные данные — 400 с описанием ошибок
+POST {{host}}/api/leads
+Content-Type: application/json
+
+{
+  "name": "Иван",
+  "phone": "",
+  "email": "not-an-email",
+  "clientType": "Individual"
+}
+
+### Куда и через какой канал ушли письма (только в Development)
+GET {{host}}/api/debug/mailbox
